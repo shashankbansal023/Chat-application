@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body{
+    margin:0
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-aspect-ratio: 9/10){
+    .JoinPage{
+        display:flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .JoinContainer{
+        width: 100%;
+        margin-top:30vw;
+    }
+    
+    .JoinContainer > img{
+        height: 30vw !important;
+    }
+    
+    .JoinContainer>h1{
+        color: white;
+        font-size: 6vw !important;
+        font-family: "Roboto";
+        width :55vw !important;
+        border-bottom: 0.2vmax solid white;
+        padding: 3vw !important;
+    
+    }
+    
+    #joinInput{
+        width:65vw !important;
+        padding:4vw;
+        font-size: 5vw!important;
+        margin: 2vmax;
+    }
+    
+    .join-btn{
+        width:65vw !important;
+        padding:4vw;
+        font-size: 5vw !important;
+      
+    }
+    
+    .join-btn:hover{
+        background-color:rgb(172, 13, 44);
+    }
+
+    .chatContainer{
+        background-color: white;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+    
+    .header{
+        height: 10% !important;
+    }
+
+    .header>a>img{
+        margin: 6vw!important;
+        transform: scale(1.6);
+    }
+       
+    .header>h2{
+        font-size:5vw!important; 
+        margin: 5vw !important;
+    }
+
+    .header>img:hover{
+        transform:scale(1.2);
+    }
+    
+    
+.chatBox{
+    height: 80% !important;
+    font-size: 20vw!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputBox{
+    height: 5% !important;
+    font-size: 4vw !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#chatInput{
+   
+    padding: 4vw !important;
+    font-size: 4vw!important;
 }
 
-.App-link {
-  color: #61dafb;
+
+.messageBox{
+    /* width: initial; */
+    padding:3vw;
+    margin:2vmax;
+    border-radius: 1.5vw;
+    font-size: 4vw!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right{
+    float:right;
+    background-color: crimson;
+    color:white;
+    text-align:right;
 }
+
+.left{
+    float:left;
+    text-align:left;
+    background-color: rgb(164, 221, 117);
+}
+
+.sendBtn{
+    background-color: crimson;
+    color: white;
+    width: 20%; 
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s;
+    font-size: 2vmax!important;
+}
+
+}
+
